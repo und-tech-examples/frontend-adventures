@@ -1,14 +1,29 @@
 
-# mdx-deck basic template
-
-This was generated with [mdx-deck][]'s `npm init deck` command.
+# mdx-deck FrontEnd Adventure
 
 ## Development
 
 To run the presentation deck in development mode:
 
+For run the main
+
 ```sh
 npm start
+```
+
+For run Claudia's Slide
+```sh
+npm run start:claudia
+```
+
+For run Daniela's Slide
+```sh
+npm run start:daniela
+```
+
+For run Kathia's Slide
+```sh
+npm run start:kathia
 ```
 
 Edit the [`deck.mdx`](deck.mdx) file to get started.
