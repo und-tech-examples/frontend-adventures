@@ -1,0 +1,30 @@
+{
+  "private": true,
+  "version": "1.0.0",
+  "description": "Nuestras geniales aventuras en el FrontEnd",
+  "scripts": {
+    "start": "mdx-deck deck.mdx",
+    "start:claudia": "mdx-deck claudia-deck.mdx",
+    "start:daniela": "mdx-deck daniela-deck.mdx",
+    "start:kathia": "mdx-deck kathia-deck.mdx",
+    "build": "mdx-deck build deck.mdx",
+    "pdf": "mdx-deck pdf deck.mdx",
+    "image": "mdx-deck screenshot deck.mdx",
+    "help": "mdx-deck"
+  },
+  "keywords": [
+    "awesome",
+    "frontend",
+    "und-tech"
+  ],
+  "author": "UND Tech",
+  "license": "MIT",
+  "devDependencies": {
+    "mdx-deck": "^1.6.7"
+  },
+  "bugs": {
+    "url": "https://github.com/und-tech-examples/frontend-adventures/issues"
+  },
+  "homepage": "https://github.com/und-tech-examples/frontend-adventures#readme",
+  "name": "frontend-adventures"
+}
