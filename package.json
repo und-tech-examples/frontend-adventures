@@ -26,5 +26,8 @@
     "url": "https://github.com/und-tech-examples/frontend-adventures/issues"
   },
   "homepage": "https://github.com/und-tech-examples/frontend-adventures#readme",
-  "name": "frontend-adventures"
+  "name": "frontend-adventures",
+  "dependencies": {
+    "@rebass/grid": "^6.0.0-7"
+  }
 }
