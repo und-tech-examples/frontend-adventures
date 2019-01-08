@@ -1,23 +1,159 @@
 import { Head } from 'mdx-deck'
+import { Appear } from 'mdx-deck'
+import { Cover } from './components/cover'
+import { AboutUs } from './components/about-us'
+import { Demo } from './components/demo'
+import JSLayout from './components/jsLayout'
+import NodeLayout from './components/nodeLayout'
+import TerminalLayout from './components/terminalLayout'
+import CSSLayout from './components/cssLayout'
 
 export { default as theme } from './theme'
 
 <Head>
-  <title>Presentation Title</title>
+  <title>Front End Adventures - UND</title>
 </Head>
 
-# Hello
+<Cover />
 
 ---
 
-## Edit this file
+## Hola 👋 somos...
 
-To create your presentation
+<AboutUs />
+
+---
+
+# ¿Qué me hacer ser un buen Front End?
+<div style={{fontSize:'3em', marginTop: '50px'}}>🤔</div>
+
+---
+
+export default JSLayout
+
+## JavaScript
+
+<ul style={{textAlign: 'left'}}>
+  <li>ES6 (<a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Sentencias/let">let</a>, <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Sentencias/const">const</a>)</li>
+  <Appear>
+    <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Closures">Closures</a></li>
+    <li>Clases (<a href="http://es6-features.org/#ClassDefinition">ES6 clases</a>, <a href="https://tylermcginnis.com/beginners-guide-to-javascript-prototype/">prototype</a>, <a href="https://javascript.info/prototype-inheritance">herencia)</a></li>
+    <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Promise">Promesas</a></li>
+    <li><a href="https://javascript.info/async-await">Async/Await</a></li>
+    <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Funciones/Arrow_functions">Arrow Functions</a></li>
+    <li><a href="http://exploringjs.com/es6/ch_modules.html">ES6 Modules</a></li>
+    <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/template_strings">Template strings</a></li>
+    <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Operadores/Spread_operator">Spread Operator</a></li>
+  </Appear>
+</ul>
 
 ```notes
-- Create speaker notes in fenced code blocks
+Si sabes bastante sobre esto, puedes tomar cualquier Framework y empezar a trabajar
+```
+---
+
+![Git and Github](https://cdn-images-1.medium.com/max/2600/1*qwFrTMnFkcd3U9rFKwwacw.png)
+
+```notes
+Es muy importante debido a que cuando buscas trabajo es ahí donde ven qué tanto has investigado o aprendido.Es un buen filtro para mostrar tus skills y tener un portfolio.
 ```
 
 ---
 
-<https://github.com/jxnblk/mdx-deck>
+export default NodeLayout
+
+## Node / NPM / Yarn
+
+<ul style={{textAlign: 'left'}}>
+  <Appear>
+    <li><a href="https://medium.com/noders/t%C3%BA-yo-y-package-json-9553929fb2e3">¿Cómo funciona package.json?</a></li>
+    <li><a href="https://semver.org/">Semantic versioning (v1.0.0)</a></li>
+    <li><a href="https://css-tricks.com/why-npm-scripts/">NPM Scripts</a></li>
+  </Appear>
+</ul>
+
+```notes
+```
+
+---
+
+export default TerminalLayout
+
+## Terminal
+
+- Interactuar con la línea de comandos (CLI)
+
+---
+
+export default CSSLayout
+
+## CSS
+
+Si puedes construir un layout desde cero,<br />
+con ciertas características, que sea responsive,<br />
+entonces se puede considerar que sabes CSS.
+
+
+<ul style={{textAlign: 'left'}}>
+  <Appear>
+    <li><a href="https://css-tricks.com/almanac/properties/d/display/">Display</a></li>
+    <li><a href="https://css-tricks.com/almanac/properties/p/position/">Position</a></li>
+    <li><a href="https://css-tricks.com/almanac/properties/z/z-index/">z-index</a></li>
+    <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">Flexbox</a> / <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank">Grid</a></li>
+  </Appear>
+</ul>
+
+---
+
+export default JSLayout
+
+## JavaScript Framework
+
+<ul style={{textAlign: 'left'}}>
+  <Appear>
+    <li><a href="https://reactjs.org/">React</a></li>
+    <li><a href="https://angular.io/">Angular</a></li>
+    <li><a href="https://vuejs.org/">Vue</a></li>
+    <li><a href="https://www.emberjs.com/">Ember</a></li>
+  </Appear>
+</ul>
+
+---
+
+## Otros
+
+- Pruebas Unitarias (Jest, Jasmine, Mocha, etc).
+- Bundler (Webpack, Parcel, etc)
+- Gulp / Grunt
+- Canvas
+- SVG
+
+---
+
+## You know... English
+
+![Aprender inglés](/public/english-meme.jpg)
+
+---
+
+## Demos inspiradoras
+<div style={{fontSize:'3em', marginTop: '50px'}}>🦄🦄🦄</div>
+
+---
+
+<Demo>
+  <iframe src="http://www.optimum7.com/css3-man/animation.html" style={{height: '100%'}}></iframe>
+</Demo>
+
+---
+
+<Demo>
+  <iframe src="https://codepen.io/wout/full/WpzNVE" style={{height: '100%'}}></iframe>
+</Demo>
+
+---
+
+Enlaces de demos:
+
+- Spiderman 👉 [Optimun7](https://www.optimum7.com/blog/web-development/pure-css3-spiderman-ipad-cartoon-jquery-html5-no-flash.html)
+- Pong 👉 [CSS Tricks](https://css-tricks.com/pong-svg-js/)
