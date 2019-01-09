@@ -41,6 +41,14 @@ To export an image of the title slide:
 npm run image
 ```
 
+## Deploy
+
+```sh
+npm run build
+npm run deploy
+```
+
+
 For more documentation see the [mdx-deck][] repo.
 
 [mdx-deck]: https://github.com/jxnblk/mdx-deck
