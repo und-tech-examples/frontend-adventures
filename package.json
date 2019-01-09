@@ -6,7 +6,10 @@
     "start": "mdx-deck deck.js",
     "start:daniela": "mdx-deck daniela-deck.mdx",
     "start:kathia": "mdx-deck kathia-deck.mdx",
-    "build": "mdx-deck build deck.js",
+    "prebuild": "rimraf dist",
+    "build": "mdx-deck build --no-html deck.js",
+    "postbuild": "cpy --parents \"public/**\" ./dist",
+    "deploy": "gh-pages -d dist",
     "pdf": "mdx-deck pdf deck.js",
     "image": "mdx-deck screenshot deck.js",
     "help": "mdx-deck"
@@ -19,7 +22,10 @@
   "author": "UND Tech",
   "license": "MIT",
   "devDependencies": {
-    "mdx-deck": "^1.6.7"
+    "cpy-cli": "^2.0.0",
+    "gh-pages": "^2.0.1",
+    "mdx-deck": "^1.6.7",
+    "rimraf": "^2.6.3"
   },
   "bugs": {
     "url": "https://github.com/und-tech-examples/frontend-adventures/issues"

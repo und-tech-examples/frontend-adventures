@@ -14,17 +14,17 @@ const List = styled.ul`
 export const Intro = () => {
   return (
     <React.Fragment>
-    <iframe
-      src="https://giphy.com/embed/8vc2rMUDjhy6Y" width="480" height="267" frameBorder="0" class="giphy-embed" allowFullScreen>
-    </iframe>
-    <Appear>
-      <P>Lo que les quiero contar:</P>
-      <List>
-        <li>⋆ Lo que hacía antes ⋆</li>
-        <li>⋆ Lo que hago ahora ⋆</li>
-        <li>⋆ Lo que me hubiese gustado que me digan durante el camino ⋆</li>
-      </List>
-    </Appear>
+      <iframe
+        src="https://giphy.com/embed/8vc2rMUDjhy6Y" width="480" height="267" frameBorder="0" className="giphy-embed" allowFullScreen>
+      </iframe>
+      <Appear>
+        <P>Lo que les quiero contar:</P>
+        <List>
+          <li>⋆ Lo que hacía antes ⋆</li>
+          <li>⋆ Lo que hago ahora ⋆</li>
+          <li>⋆ Lo que me hubiese gustado que me digan durante el camino ⋆</li>
+        </List>
+      </Appear>
     </React.Fragment>
   )
 }
