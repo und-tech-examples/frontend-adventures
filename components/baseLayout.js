@@ -1,8 +1,9 @@
 import React from 'react'
+import { Box } from '@rebass/grid'
 
 export default ({ children, background, color }) => (
-  <div
-    style={{
+  <Box
+    css={{
       alignContent: 'center',
       alignItems: 'center',
       backgroundColor: background || 'white',
@@ -11,8 +12,14 @@ export default ({ children, background, color }) => (
       height: '100vh',
       justifyContent: 'center',
       width: '100vw',
+      '& a': {
+        color: 'inherit',
+        '&:visited': {
+          color: 'inherit'
+        },
+      },
     }}
   >
     <div>{children}</div>
-  </div>
+  </Box>
 )

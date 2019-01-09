@@ -1,5 +1,7 @@
 import { Head } from 'mdx-deck'
 import { Appear } from 'mdx-deck'
+import { Split, FullScreenCode } from 'mdx-deck/layouts'
+import { CodeSurfer } from 'mdx-deck-code-surfer'
 import { Cover } from './components/cover'
 import { AboutUs } from './components/about-us'
 import { Demo } from './components/demo'
@@ -11,14 +13,18 @@ import CSSLayout from './components/cssLayout'
 export { default as theme } from './theme'
 
 <Head>
+  <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon" />
   <title>Front End Adventures - UND</title>
 </Head>
 
 <Cover />
 
 ---
+export default Split
 
 ## Hola 👋 somos...
+
+Front End Developers en [UND](https://github.com/und-tech)
 
 <AboutUs />
 
@@ -89,11 +95,6 @@ export default CSSLayout
 
 ## CSS
 
-Si puedes construir un layout desde cero,<br />
-con ciertas características, que sea responsive,<br />
-entonces se puede considerar que sabes CSS.
-
-
 <ul style={{textAlign: 'left'}}>
   <Appear>
     <li><a href="https://css-tricks.com/almanac/properties/d/display/">Display</a></li>
@@ -102,6 +103,10 @@ entonces se puede considerar que sabes CSS.
     <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">Flexbox</a> / <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank">Grid</a></li>
   </Appear>
 </ul>
+
+```notes
+Si puedes construir un layout desde cero, con ciertas características, que sea responsive, entonces se puede considerar que sabes CSS.
+```
 
 ---
 
@@ -144,6 +149,52 @@ export default JSLayout
 <Demo>
   <iframe src="http://www.optimum7.com/css3-man/animation.html" style={{height: '100%'}}></iframe>
 </Demo>
+
+---
+
+export default FullScreenCode
+
+<CodeSurfer
+  code={`
+    \/*BASIC SETUP
+    ================================*\/
+    #the-screen #screen-03 img.left-forearm {
+      position:relative;
+      top:-5px;
+      z-index:3333;
+    }
+    \/* SCREEN-03 SPIDERMAN ANIMATION SETUP
+    ================================*\/
+    @-webkit-keyframes spiderman_forearm{
+    0%{-webkit-transform:rotate(100deg);}
+    10%{-webkit-transform:rotate(100deg);}
+    20%{-webkit-transform:rotate(0deg);}
+    100%{-webkit-transform:rotate(0deg);}
+    }
+    \/* SCREEN-03 SPIDERMAN ANIMATION FUNCTION
+    ================================*\/
+    #the-screen #screen-03 img.left-forearm {
+    -webkit-animation-name:spiderman_forearm;
+    -webkit-animation-duration:5s;
+    -webkit-animation-iteration-count:1;
+    -webkit-transform-origin:17px 0%;
+    -webkit-animation-delay:15000ms;
+    -webkit-animation-timing-function:ease-in-out;
+    }
+    \/* SCREEN-03 web ANIMATION SETUP
+    ================================*\/
+    #the-screen #screen-03 .spiderman-leftarm .web {
+      background:url(../img/03-web.jpg) no-repeat scroll -2px -1200px transparent;
+      height:300px;
+      left:10px;
+      position:absolute;
+      top:91px;
+      width:5px;
+    }
+  `}
+  lang="css"
+/>
+
 
 ---
 
