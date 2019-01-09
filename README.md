@@ -11,11 +11,6 @@ For run the main
 npm start
 ```
 
-For run Claudia's Slide
-```sh
-npm run start:claudia
-```
-
 For run Daniela's Slide
 ```sh
 npm run start:daniela
@@ -25,8 +20,6 @@ For run Kathia's Slide
 ```sh
 npm run start:kathia
 ```
-
-Edit the [`deck.mdx`](deck.mdx) file to get started.
 
 ## Exporting
 
