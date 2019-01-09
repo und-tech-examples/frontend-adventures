@@ -3,13 +3,12 @@
   "version": "1.0.0",
   "description": "Nuestras geniales aventuras en el FrontEnd",
   "scripts": {
-    "start": "mdx-deck deck.mdx",
-    "start:claudia": "mdx-deck claudia-deck.mdx",
+    "start": "mdx-deck deck.js",
     "start:daniela": "mdx-deck daniela-deck.mdx",
     "start:kathia": "mdx-deck kathia-deck.mdx",
-    "build": "mdx-deck build deck.mdx",
-    "pdf": "mdx-deck pdf deck.mdx",
-    "image": "mdx-deck screenshot deck.mdx",
+    "build": "mdx-deck build deck.js",
+    "pdf": "mdx-deck pdf deck.js",
+    "image": "mdx-deck screenshot deck.js",
     "help": "mdx-deck"
   },
   "keywords": [
