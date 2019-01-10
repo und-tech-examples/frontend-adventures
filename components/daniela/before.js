@@ -23,7 +23,7 @@ export const Before = () => {
       <Appear>
         <ImageWrapper>
           <Image
-            src="public/sieteYCuartoPost.png"
+            src="./public/sieteYCuartoPost.png"
           />
         </ImageWrapper>
       </Appear>

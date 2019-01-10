@@ -23,7 +23,7 @@ export const Today = () => {
       <Appear>
         <ImageWrapper>
           <Image
-            src="public/software-developer-meme.jpg"
+            src="./public/software-developer-meme.jpg"
           />
         </ImageWrapper>
       </Appear>
